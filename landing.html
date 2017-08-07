@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Form Registration Merchant | Pinjaman Tanpa Agunan</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="landing.html" class="navbar-brand"><b>BFI </b>Finance</a>
+        </div>
+        <!-- /.navbar-custom-menu -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Registrasi Pinjaman Tanpa Agunan
+        </h1>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#registrasi" data-toggle="tab" aria-expanded="false">Registrasi</a>
+              </li>
+              <li>
+                <a href="#data-diri" data-toggle="tab" aria-expanded="false">Data Diri</a>
+              </li>
+              <li>
+                <a href="#alamat" data-toggle="tab" aria-expanded="false">Alamat</a>
+              </li>
+              <li>
+                <a href="#pekerjaan" data-toggle="tab" aria-expanded="false">pekerjaan</a>
+              </li>
+              <!-- <li>
+                <a href="#dokumen" data-toggle="tab" aria-expanded="false">Dokumen</a>
+              </li> -->
+            </ul>
+          </div>
+        <div class="tab-content no-padding">
+          <div class="tab-pane active" id="registrasi">
+            <form>
+                  <div class="box-body">
+                    <div class="form-group">
+                      <label for="">Merchant ID</label>
+                      <input type="text" class="form-control" id="merchant-id" placeholder="Merchant ID">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Merchant Name</label>
+                      <input type="text" class="form-control" id="merchant-name" placeholder="Merchant Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Domain Website</label>
+                      <input type="url" class="form-control" id="domain" placeholder="Domain Website">
+                    </div>
+                    <label for="">Jumlah Pengajuan Pinjaman</label>
+                    <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">Rp</span>
+                      <input type="number" class="form-control" id="pinjaman" placeholder="Jumlah Pinjaman">
+                    </div>
+                  </div>
+                    <div class="form-group">
+                      <label>Jangka Waktu Pinjaman</label>
+                      <select class="form-control">
+                        <option value="3 Bulan">3 Bulan</option>
+                        <option value="6 Bulan">6 Bulan</option>
+                        <option value="9 Bulan">9 Bulan</option>
+                        <option value="12 Bulan">12 Bulan</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+              </form>
+          </div>
+          <div class="tab-pane" id="data-diri">
+            <form>
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="">Nama ( Sesuai KTP )</label>
+                  <input type="text" class="form-control" id="nama" placeholder="Nama Sesuai KTP">
+                </div>
+                <div class="form-group">
+                  <label for="">No. Handphone</label>
+                  <input type="tel" class="form-control" id="no_handphone" placeholder="Nomor Handphone">
+                </div>
+                <div class="form-group">
+                  <label for="">Status Pernikahan</label>
+                  <select class="form-control" id="status_kawin" placeholder="Status Pernikahan">
+                    <option value="menikah">Menikah</option>
+                    <option value="single">Single</option>
+                    <option value="janda/duda">Janda / Duda</option>
+                    <option value="bercerai">Bercerai</option>
+                    <option value="lain-lain">Lain-lain</option>
+                  </select>
+                </div>
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane" id="alamat">
+            <form>
+              <div class="box-body">
+                <div class="form-group">
+                <label> Alamat ( Berdasarkan KTP ) </label>
+                <textarea type="text" class="form-control" rows="3" placeholder="Alamat Berdasarkan KTP"></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Provinsi</label>
+                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                    <option selected="selected">Banten</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Kabupaten</label>
+                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                    <option selected="selected">Banten</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Kecamatan</label>
+                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                    <option selected="selected">Banten</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Kepimilikan Rumah</label>
+                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                    <option selected="selected">Sendiri</option>
+                    <option value="orang_tua">Orang Tua</option>
+                    <option value="anak">Anak</option>
+                    <option value="pasangan">Pasangan</option>
+                    <option value="keluarga">Keluarga</option>
+                    <option value="sewa">Sewa</option>
+                    <option value="kontrak">Kontrak</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Lama Menetap (bulan)</label>
+                  <input type="text" class="form-control" placeholder="lama menetap">
+                </div>
+                <div class="box-header">
+                  <h3 class="box-title">Alamat Domisili</h3>
+              </div>
+              <div class="form-group">
+                <label>Alamat Berdasarkan Domisili</label>
+                <textarea type="text" class="form-control" rows="3" placeholder="Alamat Berdasarkan Domisili"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Provinsi</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                  <option selected="selected">Banten</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Kabupaten</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                  <option selected="selected">Banten</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Kecamatan</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                  <option selected="selected">Banten</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Kepimilikan Rumah</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                  <option selected="sendiri">Sendiri</option>
+                  <option value="orang_tua">Orang Tua</option>
+                  <option value="anak">Anak</option>
+                  <option value="pasangan">Pasangan</option>
+                  <option value="keluarga">Keluarga</option>
+                  <option value="sewa">Sewa</option>
+                  <option value="kontrak">Kontrak</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Lama Menetap (bulan)</label>
+                <input type="text" class="form-control" placeholder="lama menetap">
+              </div>
+              <div class="box-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="tab-pane" id="pekerjaan">
+          <form>
+            <div class="box-body">
+            <div class="form-group">
+              <label>Apakah Berjualan Online Sumber Pendapatan Utama Anda ?</label>
+              <select class="form-control">
+                <option selected="ya">Ya</option>
+                <option selected="tidak">Tidak</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Apa Pekerjaan Anda?</label>
+              <input class="form-control" type="text" placeholder="Pekerjaan"></input>
+            </div>
+            <div class="form-group">
+              <label>Dimana Tempat Anda Bekerja?</label>
+              <input class="form-control" type="text" placeholder="tempat bekerja"></input>
+            </div>
+            <div class="form-group">
+              <label>Berapa Penghasilan/ Gaji Anda Setiap Bulan?</label>
+              <input class="form-control" type="text" placeholder="Penghasilan"></input>
+            </div>
+            <div class="form-group">
+              <label>Pinjaman apa saja yang anda miliki saat ini?</label>
+              <input class="form-control" type="text" placeholder="contoh : Kredit Mobil"></input>
+            </div>
+            <div class="form-group">
+              <label>Berapa Total Jumlah Pinjamannya?</label>
+              <input class="form-control" type="number" placeholder="Jumlah Pinjaman"></input>
+            </div>
+            <div class="form-group">
+              <label>Berapa Total Cicilan Pinjaman Tersebut Tiap Bulannya?</label>
+              <input class="form-control" type="number" placeholder="Bulan"></input>
+            </div>
+            <div class="form-group">
+              <label>Berapa Total Nominal Sisa Pinjaman Tersebut?</label>
+              <input class="form-control" type="number" placeholder="nominal"></input>
+            </div>
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+        <!-- /.box -->
+      </section>
+      <!-- /.content -->
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="container">
+    <strong>Copyright &copy; 2017-2018 <a href="https://bfi.co.id">BFI Finance</a>.</strong> All rights
+      reserved.
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.1.4 -->
+<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+</body>
+</html>
